@@ -6,7 +6,6 @@ from aioconsole import aprint
 code = "2NDFSNmb"
 
 async def main():
-    count = 0
     tokens = open("tokens.txt").read().splitlines()
     for token in tokens:
         try:
@@ -43,7 +42,7 @@ async def main():
                         await aprint("Locked token")
                     else:
                         j = await resp.json()
-                        await aprint(resp.status, j, count)
+                        await aprint(resp.status, j)
             await asyncio.sleep(0.7)
         except Exception as e:
             await aprint(f"Error: {e}")
