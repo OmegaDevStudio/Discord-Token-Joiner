@@ -34,7 +34,7 @@ async def main():
                     'TE': 'trailers',
                 }
                 async with aiohttp.ClientSession() as session:
-                    async with session.post(f"https://canary.discord.com/api/v9/invites/{code}", headers=headers, json={}, proxy=f"https://{proxy}") as resp:
+                    async with session.post(f"https://canary.discord.com/api/v9/invites/{code}", headers=headers, json={}, proxy=f"http://{proxy}") as resp:
                         if resp.status == 200:
                             await aprint("Joined successfully")
                         elif resp.status == 429:
