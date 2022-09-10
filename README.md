@@ -8,6 +8,10 @@ Place user tokens within the tokens.txt file. Then within main.py change the inv
 
 ![Example of output](https://cdn.discordapp.com/attachments/1007769724836397158/1007798288411533323/unknown.png)
 
+## Associated Script(s)
+
+[This script](https://github.com/Shell1010/Mass-Token-Online) uses discord gateway to make tokens turn online. It spoofes mobile status and you can change the rich presence to advertise your server.
+
 ## Help & Support
 
 - Join my [discord server](https://discord.gg/fuf8t4JWDV)
